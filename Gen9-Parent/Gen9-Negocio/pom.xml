@@ -13,9 +13,12 @@
 	<name>Gen9-Negocio</name>
 	<description>Demo project for Spring Boot</description>
 	<packaging>pom</packaging>
+
 	<modules>
 		<module>Gen9-Choferes</module>
+		<module>Gen9-Camiones</module>
 	</modules>
+
 
 	
 	
