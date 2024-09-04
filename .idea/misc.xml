@@ -5,6 +5,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/Gen9-Parent/pom.xml" />
+        <option value="$PROJECT_DIR$/Gen9-Parent/Gen9-Negocio/Gen9-Rutas/pom.xml" />
       </list>
     </option>
   </component>

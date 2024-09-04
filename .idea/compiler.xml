@@ -6,9 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Gen9-Rutas" />
         <module name="Gen9-Camiones" />
         <module name="Gen9-Choferes" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Gen9-Negocio (1)" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Gen9-Rutas" options="-parameters" />
+    </option>
   </component>
 </project>
