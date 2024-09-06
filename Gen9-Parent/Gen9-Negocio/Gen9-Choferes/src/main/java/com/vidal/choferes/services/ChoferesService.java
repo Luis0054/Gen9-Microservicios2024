@@ -11,9 +11,15 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-@Component
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.vidal.choferes.dao.IChoferesDao;
+import com.vidal.choferes.models.Chofer;
+
+@Component  /// Esto puede ser una pregunta
 public class ChoferesService {
-    @Autowired
+@Autowired
     IChoferesDao choferesDao;
 
 
@@ -41,7 +47,6 @@ public class ChoferesService {
     public void delete(Chofer t) {
         this.choferesDao.delete(t);
     }
-
 
 
 

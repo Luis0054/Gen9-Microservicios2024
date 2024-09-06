@@ -9,6 +9,7 @@
         <module name="Gen9-Rutas" />
         <module name="Gen9-Camiones" />
         <module name="Gen9-Choferes" />
+        <module name="Gen9-eurekaServer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

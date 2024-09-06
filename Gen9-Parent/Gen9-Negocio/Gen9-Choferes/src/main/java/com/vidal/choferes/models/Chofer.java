@@ -4,15 +4,22 @@ import jakarta.persistence.*;
 
 import java.time.LocalDate;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.SequenceGenerator;
+import jakarta.persistence.Table;
+
 @Entity
-@Table(name="m1_choferes")
+@Table(name = "m1_choferes")
 public class Chofer {
-    //atributos
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "CUST_SEQ1")
-    @SequenceGenerator(sequenceName = "customer_seq1", allocationSize = 1, name = "CUST_SEQ1")
-
+//atributos
+@Id
+//Esto es para que el ID se genere con una secuencia
+@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "CUST_SEQ1")
+@SequenceGenerator(sequenceName = "customer_seq1", allocationSize = 1, name = "CUST_SEQ1")
 
 private Long id;
 private String nombre;
@@ -22,6 +29,7 @@ private String licencia;
 private String telefono;
 private LocalDate fechaNacimiento;
 private Boolean disponibilidad;
+
 public Long getId() {
     return id;
 }
@@ -70,11 +78,5 @@ public Boolean getDisponibilidad() {
 public void setDisponibilidad(Boolean disponibilidad) {
     this.disponibilidad = disponibilidad;
 }
-
-
-
-
-
-
 
 }
